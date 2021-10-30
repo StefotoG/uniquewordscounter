@@ -1,3 +1,28 @@
-Start testing: Oct 31 00:40 EEST
+Start testing: Oct 31 01:22 EEST
 ----------------------------------------------------------
-End testing: Oct 31 00:40 EEST
+1/1 Testing: fileOperators
+1/1 Test: fileOperators
+Command: "/home/stefan/uniquewordscounter/build/test/fileOperators_tests"
+Directory: /home/stefan/uniquewordscounter/build/test
+"fileOperators" start time: Oct 31 01:22 EEST
+Output:
+----------------------------------------------------------
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from sum
+[ RUN      ] sum.ok
+5[       OK ] sum.ok (0 ms)
+[----------] 1 test from sum (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"fileOperators" end time: Oct 31 01:22 EEST
+"fileOperators" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 31 01:22 EEST

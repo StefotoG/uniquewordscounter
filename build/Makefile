@@ -232,6 +232,19 @@ gtest/fast:
 	$(MAKE) -f _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
+#=============================================================================
+# Target rules for targets named fileOperators_tests
+
+# Build rule for target.
+fileOperators_tests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 fileOperators_tests
+.PHONY : fileOperators_tests
+
+# fast build rule for target.
+fileOperators_tests/fast:
+	$(MAKE) -f test/CMakeFiles/fileOperators_tests.dir/build.make test/CMakeFiles/fileOperators_tests.dir/build
+.PHONY : fileOperators_tests/fast
+
 src/fileOperators.o: src/fileOperators.c.o
 
 .PHONY : src/fileOperators.o
@@ -304,6 +317,7 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
+	@echo "... fileOperators_tests"
 	@echo "... src/fileOperators.o"
 	@echo "... src/fileOperators.i"
 	@echo "... src/fileOperators.s"

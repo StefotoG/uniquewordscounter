@@ -15,6 +15,8 @@ FetchContent_MakeAvailable(googletest)
 
 enable_testing()
 
+add_subdirectory(test)
+
 include_directories("${PROJECT_SOURCE_DIR}/include")
 
 file(GLOB sources "${PROJECT_SOURCE_DIR}/src/*.c")
@@ -22,6 +24,7 @@ file(GLOB sources "${PROJECT_SOURCE_DIR}/src/*.c")
 add_executable(
   hello_test
   ${sources}
+  test/
 )
 target_link_libraries(
   hello_test
