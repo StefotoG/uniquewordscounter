@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <locale.h>
+#include <stdlib.h>
 #include "fileOperators.h"
 
 #define EXPECTED_NUMBER_OF_ARGUMENTS 2
@@ -6,6 +8,9 @@
 
 int main(int argc, char **argv)
 {
+    
+    system("chcp 1251");
+    setlocale(LC_ALL, "UTF8");
 
     if (argc > EXPECTED_NUMBER_OF_ARGUMENTS || argc < EXPECTED_NUMBER_OF_ARGUMENTS)
     {
