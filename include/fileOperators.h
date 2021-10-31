@@ -4,6 +4,5 @@
 
 
 int fileOperators_countWords(char* filename);
-int sum(int a, int b);
 
 #endif

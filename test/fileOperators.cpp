@@ -4,7 +4,9 @@ extern "C" {
     #include "fileOperators.h"
 }
 
-TEST(sum, ok){
-    ASSERT_EQ(sum(2, 3), 5);
-    ASSERT_EQ(sum(1,2),3);
+TEST(countWords, verifyUniqueWords){
+    char file[] = "../../smalldictionary.txt";
+    //smalldictionary.txt is with exactly 35 unique words and should not be changed.
+    ASSERT_EQ(fileOperators_countWords(file), 35);
+
 }

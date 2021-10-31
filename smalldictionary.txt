@@ -1,0 +1,27 @@
+This is? a small!(demo) dictionary.
+This dictionary is contains only 11 unique words words. 
+adipiscing
+amet
+brown
+consectetur
+dog
+dolor
+elit
+example
+examples
+for
+fox
+ipsum
+jumped
+lazy
+Lorem
+over
+quick
+rather
+sit
+Some
+text
+than
+The
+use
+35

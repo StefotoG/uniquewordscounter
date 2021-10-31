@@ -16,6 +16,5 @@ int main(int argc, char **argv)
         fileOperators_countWords(argv[FILE_NAME]);
     }
 
-    sum(2, 3);
     return 0;
 }

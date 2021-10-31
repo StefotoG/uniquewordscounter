@@ -53,6 +53,8 @@ int fileOperators_countWords(char *filename)
     FILE *fp = fopen(filename, "r");
     FILE *tempFile = fopen(filename, "r");
 
+    int totalWords = 0;
+
     if (fp == NULL || tempFile == NULL)
     {
         printf("File can't be open!\n");
@@ -60,16 +62,11 @@ int fileOperators_countWords(char *filename)
     }
     else
     {
-        int totalWords = _fileOperators_countUnique(fp, tempFile);
+        totalWords = _fileOperators_countUnique(fp, tempFile);
         printf("unique words are: %d\n", totalWords);
     }
 
     fclose(tempFile);
     fclose(fp);
-    return 0;
-}
-
-int sum(int a, int b)
-{
-    return a + b;
+    return totalWords;
 }
