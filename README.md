@@ -14,6 +14,7 @@ In order to be used you have to pass as an argument filename.
 * Ubuntu with build-essential package
 * Cmake
 * A compatible C++ compiler that supports at least C++11.
+* valgrind
 
 ### Installing
 
@@ -33,6 +34,12 @@ $ cd build/
 $ ctest
 $ cd ..
 $ ./build/hello_test smalldictionary.txt
+```
+
+### Executing program with statistics
+
+```
+$ valgrind ./build/hello_test smalldictionary.txt
 ```
 
 ## Authors
