@@ -35,6 +35,8 @@ $ cd ..
 $ ./build/hello_test smalldictionary.txt
 ```
 
+Dashboard from ctest is in "build/Testing/Temporary/LastTest.log".
+
 ## Authors
 
 Contributors names and contact info

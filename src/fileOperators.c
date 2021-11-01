@@ -69,7 +69,7 @@ int fileOperators_countWords(char *filename)
 
     if (fp == NULL || tempFile == NULL)
     {
-        printf("File can't be open!\n");
+        perror("File can't be open!\n");
         exit(0);
     }
     else
@@ -79,7 +79,7 @@ int fileOperators_countWords(char *filename)
 
         if (bufferedReading == NULL)
         {
-            printf("mem not allocated!\n");
+            perror("mem not allocated!\n");
             exit(0);
         }
 
