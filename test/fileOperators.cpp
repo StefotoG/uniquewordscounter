@@ -5,17 +5,17 @@ extern "C" {
 }
 
 TEST(countWords, verifyUniqueWords){
-    char smallfile[] = "../smalldictionary.txt";
+    char smallfile[] = "../../smalldictionary.txt";
     //smalldictionary.txt is with exactly 35 unique words and should not be changed.
     ASSERT_EQ(fileOperators_countWords(smallfile), 35);
 }
 TEST(countCyrillicWords, verifyCyrillicWords){
-    char cyrillicfile[] = "../cyrillicdictionary.txt";
+    char cyrillicfile[] = "../../cyrillicdictionary.txt";
     //cyrillicdictionary.txt is with exactly 14 unique words and should not be changed.
     ASSERT_EQ(fileOperators_countWords(cyrillicfile), 14);
 }
 TEST(countMixedWords, verifyMixedWords){
-    char mixedfile[] = "../mixeddictionary.txt";
+    char mixedfile[] = "../../mixeddictionary.txt";
     //mixeddictionary.txt is with exactly 13 unique words and should not be changed.
     ASSERT_EQ(fileOperators_countWords(mixedfile), 13);
 }

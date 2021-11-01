@@ -13,10 +13,10 @@ int main(int argc, char **argv)
     system("chcp 1251");
     setlocale(LC_ALL, "UTF8");
     //****************
-
+    
     if (argc > EXPECTED_NUMBER_OF_ARGUMENTS || argc < EXPECTED_NUMBER_OF_ARGUMENTS)
     {
-        perror("Wrong number of arguments! Expected only two but were passed: %d\n", argc);
+        printf("Wrong number of arguments! Expected only two but were passed: %d\n", argc);
     }
     else
     {
